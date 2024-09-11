@@ -3,27 +3,52 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
+  "engines": {
+    "node": ">= 20",
+    "pnpm": ">=9"
+  },
+  "packageManager": "pnpm@9.8.0",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky",
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "lint:fix": "eslint src --fix && pnpm format",
+    "format": "prettier --write src",
+    "preview": "vite preview",
+    "type-check": "tsc --project tsconfig.app.json --noEmit && tsc --project tsconfig.node.json --noEmit&& echo \"Types check passed\"",
+    "check:turbo": "pnpm turbo lint type-check test",
+    "turbo": "pnpm dlx turbo@2.0.9"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,jsx}": "eslint --fix",
+    "*.{js,css,md,ts,tsx,jsx}": "prettier --write"
   },
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@commitlint/config-conventional": "^19.5.0",
+    "@commitlint/types": "^19.5.0",
     "@eslint/js": "^9.10.0",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
+    "commitlint": "^19.5.0",
     "eslint": "^9.10.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-jsx-a11y": "^6.10.0",
+    "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.35.2",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.11",
     "globals": "^15.9.0",
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.6",
     "typescript": "~5.5.4",
     "typescript-eslint": "^8.5.0",
     "vite": "^5.4.3"
