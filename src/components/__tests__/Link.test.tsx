@@ -1,7 +1,8 @@
-import Link from '@/components/Link'
 import { render, screen } from '@testing-library/react'
 import { userEvent } from '@testing-library/user-event'
 import { expect, test } from 'vitest'
+
+import Link from '@/components/Link'
 
 test('Link changes the state when hovered', async () => {
   const user = userEvent.setup()
