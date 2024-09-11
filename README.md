@@ -48,3 +48,20 @@ export default tseslint.config({
   },
 })
 ```
+
+### Reference
+
+- https://cn.vitejs.dev/guide/api-hmr.html#intellisense-for-typescript
+- https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts
+- https://github.com/sozonome/vite-react-tailwind-starter
+- https://github.com/bluwy/create-vite-extra/tree/master/template-ssr-react-streaming-ts
+- https://react.dev/reference/react-dom/server/renderToReadableStream
+- https://github.com/alan2207/bulletproof-react/tree/master/apps/react-vite
+- https://reactrouter.com/en/main/guides/ssr
+- https://github.com/wqhui/vite-react-ssr
+
+Migrate eslint + prettier to https://biomejs.dev/guides/getting-started/
+
+## userEvent
+
+using `import { userEvent } from '@vitest/browser/context'` https://cn.vitest.dev/guide/browser/examples.html#examples
