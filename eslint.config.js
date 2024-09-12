@@ -19,7 +19,7 @@ export default tseslint.config(
       ...tseslint.configs.recommendedTypeChecked,
       ...tseslint.configs.strictTypeChecked,
       ...tseslint.configs.stylisticTypeChecked,
-      // eslintPluginPrettierRecommended,
+      eslintPluginPrettierRecommended,
     ],
     languageOptions: {
       ecmaVersion: 2020,
@@ -36,7 +36,6 @@ export default tseslint.config(
       'jsx-a11y': jsxA11y,
     },
     rules: {
-      // ...eslintConfigPrettier.rules,
       ...reactHooks.configs.recommended.rules,
       'react-refresh/only-export-components': [
         'warn',
@@ -48,6 +47,7 @@ export default tseslint.config(
       // custom
       '@typescript-eslint/no-non-null-assertion': 'off',
       '@typescript-eslint/no-confusing-void-expression': 'off',
+      ...eslintConfigPrettier.rules,
     },
   }
 )
