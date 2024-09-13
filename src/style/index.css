@@ -1,6 +1,11 @@
+@import 'additional-styles/utility-patterns.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Additional styles */
+
 @layer base {
   :root {
     --background: 0 0% 100%;

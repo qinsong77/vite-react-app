@@ -9,7 +9,7 @@ import globals from 'globals'
 import tseslint from 'typescript-eslint'
 
 export default tseslint.config(
-  { ignores: ['dist', 'src/components/ui'] },
+  { ignores: ['dist', 'src/components/ui', 'src/service/petstore'] },
   {
     files: ['**/*.{ts,tsx}'],
     settings: { react: { version: '18.3' } },
@@ -47,7 +47,9 @@ export default tseslint.config(
       // custom
       '@typescript-eslint/no-non-null-assertion': 'off',
       '@typescript-eslint/no-confusing-void-expression': 'off',
+      '@typescript-eslint/consistent-type-definitions': 'off',
       ...eslintConfigPrettier.rules,
+      'prettier/prettier': ['error', {}, { usePrettierrc: true }],
     },
   }
 )

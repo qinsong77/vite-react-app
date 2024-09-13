@@ -7,18 +7,19 @@ import viteTsconfigPaths from 'vite-tsconfig-paths'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: './',
+  base: '/',
   server: {
     open: true,
-    port: 3010,
+    port: 3005,
   },
   preview: {
-    port: 3011,
+    port: 3006,
   },
   plugins: [
     react(),
     checker({
       typescript: {
+        // todo how to ignore test stuff?
         tsconfigPath: 'tsconfig.app.json',
       },
       // eslint: { lintCommand: 'eslint "./src/**/*.{js,jsx,ts,tsx}"' },
@@ -28,7 +29,7 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'jsdom',
-    setupFiles: './src/testing/setup-tests.ts',
+    setupFiles: './src/__tests__/setup-tests.ts',
     exclude: ['**/node_modules/**', '**/e2e/**'],
     coverage: {
       include: ['src/**'],

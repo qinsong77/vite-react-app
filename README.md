@@ -1,4 +1,77 @@
-# React + TypeScript + Vite
+# Vite React Boilerplate
+
+This is a [Vite](https://vitejs.dev/) & [React](https://react.dev/) Boilerplate project base on [`pnpm create vite`](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts).
+
+## Features
+
+- [x] Vite Latest
+- [x] React 18.3.1
+- [x] Typescript
+- [x] pnpm
+- [x] Test
+  - [x] [vitest](https://vitest.dev/)
+  - [x] [react testing library](https://testing-library.com/)
+- [x] Code style/lint
+  - [x] husky
+  - [x] lint-stage
+  - [x] eslint v9
+  - [x] prettier
+    - use [prettier-plugin-sort-imports](https://github.com/trivago/prettier-plugin-sort-imports)
+  - [x] commitlint
+- [x] mock serve
+  - [msw](https://mswjs.io/docs) for mock server and test, refer: [Stop mocking fetch](https://kentcdodds.com/blog/stop-mocking-fetch)
+- [x] [Tailwindcss](https://tailwindcss.com/)
+- [x] UI Library: [shadcn/ui](https://ui.shadcn.com/)
+- [x] [React Router](https://reactrouter.com/en/main) => [TanStack Router](https://tanstack.com/router/v1) ?
+- [ ] Zustand
+- [x] Generate Api with type: [orval](https://orval.dev/)
+- [ ] axios + React Query?
+- [ ] e2e test: playwright
+  - [midscenejs](https://midscenejs.com/zh/docs/getting-started/introduction.html) using LLM to help testing.
+- [ ] Docker
+- [ ] Github actions/CI
+- test strategy - https://ethan.thoughtworkers.me/#/post/2023-12-10-react-unit-testing-best-practices-v2
+
+## TODO
+
+- after gpr, run pnpm install automatically
+- Migrate eslint + prettier to https://biomejs.dev/guides/getting-started/ ?
+- using `import { userEvent } from '@vitest/browser/context'` https://cn.vitest.dev/guide/browser/examples.html#examples
+- add `eslint-plugin-testing-library`, add `eslint-plugin-jest-dom`, `eslint-plugin-vitest`
+
+## Know issues
+
+## Getting Started
+
+First, run the development server:
+
+```bash
+# or
+pnpm dev
+```
+
+Open [http://localhost:3005](http://localhost:3005) with your browser to see the result.
+
+## Learn More
+
+TBD
+
+## Reference
+
+- https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts
+- https://github.com/bluwy/create-vite-extra/tree/master/template-ssr-react-streaming-ts
+- https://github.com/sozonome/vite-react-tailwind-starter
+- https://github.com/alan2207/bulletproof-react/tree/master/apps/react-vite
+
+### SSR
+
+- https://react.dev/reference/react-dom/server/renderToReadableStream
+- https://reactrouter.com/en/main/guides/ssr
+- https://github.com/wqhui/vite-react-ssr
+
+---
+
+## React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -48,20 +121,3 @@ export default tseslint.config({
   },
 })
 ```
-
-### Reference
-
-- https://cn.vitejs.dev/guide/api-hmr.html#intellisense-for-typescript
-- https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts
-- https://github.com/sozonome/vite-react-tailwind-starter
-- https://github.com/bluwy/create-vite-extra/tree/master/template-ssr-react-streaming-ts
-- https://react.dev/reference/react-dom/server/renderToReadableStream
-- https://github.com/alan2207/bulletproof-react/tree/master/apps/react-vite
-- https://reactrouter.com/en/main/guides/ssr
-- https://github.com/wqhui/vite-react-ssr
-
-Migrate eslint + prettier to https://biomejs.dev/guides/getting-started/
-
-## userEvent
-
-using `import { userEvent } from '@vitest/browser/context'` https://cn.vitest.dev/guide/browser/examples.html#examples
