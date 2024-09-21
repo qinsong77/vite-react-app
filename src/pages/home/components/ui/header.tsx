@@ -12,7 +12,7 @@ export default function Header() {
             {/* Logo */}
             <Link to="/" className="block" aria-label="Cruip">
               <svg
-                className="h-8 w-8 fill-current text-purple-600"
+                className="size-8 fill-current text-purple-600"
                 viewBox="0 0 32 32"
                 xmlns="http://www.w3.org/2000/svg"
               >

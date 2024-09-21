@@ -33,7 +33,7 @@ export const Main: React.FC = () => {
         className="fixed left-4 top-14 z-20 rounded-md bg-secondary p-2 md:hidden"
         onClick={() => setIsSidebarOpen(!isSidebarOpen)}
       >
-        <Menu className="h-6 w-6 text-secondary-foreground" />
+        <Menu className="size-6 text-secondary-foreground" />
       </button>
 
       {/* Sidebar */}
@@ -47,16 +47,16 @@ export const Main: React.FC = () => {
             Navigation
           </h3>
           <ul className="space-y-2">
-            <NavItem to="/main" icon={<Home className="h-4 w-4" />}>
+            <NavItem to="/main" icon={<Home className="size-4" />}>
               Main
             </NavItem>
-            <NavItem to="/main/article" icon={<FileText className="h-4 w-4" />}>
+            <NavItem to="/main/article" icon={<FileText className="size-4" />}>
               Article
             </NavItem>
-            <NavItem to="/main/list/1" icon={<List className="h-4 w-4" />}>
+            <NavItem to="/main/list/1" icon={<List className="size-4" />}>
               Article List One
             </NavItem>
-            <NavItem to="/main/profile" icon={<User className="h-4 w-4" />}>
+            <NavItem to="/main/profile" icon={<User className="size-4" />}>
               Profile
             </NavItem>
           </ul>

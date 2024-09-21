@@ -54,7 +54,7 @@ export default function Zigzag() {
                   <ul className="-mb-2 text-lg text-muted-foreground">
                     <li className="mb-2 flex items-center">
                       <svg
-                        className="mr-2 h-3 w-3 shrink-0 fill-current text-green-500"
+                        className="mr-2 size-3 shrink-0 fill-current text-green-500"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -64,7 +64,7 @@ export default function Zigzag() {
                     </li>
                     <li className="mb-2 flex items-center">
                       <svg
-                        className="mr-2 h-3 w-3 shrink-0 fill-current text-green-500"
+                        className="mr-2 size-3 shrink-0 fill-current text-green-500"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -74,7 +74,7 @@ export default function Zigzag() {
                     </li>
                     <li className="flex items-center">
                       <svg
-                        className="mr-2 h-3 w-3 shrink-0 fill-current text-green-500"
+                        className="mr-2 size-3 shrink-0 fill-current text-green-500"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -120,7 +120,7 @@ export default function Zigzag() {
                   <ul className="-mb-2 text-lg text-muted-foreground">
                     <li className="mb-2 flex items-center">
                       <svg
-                        className="mr-2 h-3 w-3 shrink-0 fill-current text-green-500"
+                        className="mr-2 size-3 shrink-0 fill-current text-green-500"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -130,7 +130,7 @@ export default function Zigzag() {
                     </li>
                     <li className="mb-2 flex items-center">
                       <svg
-                        className="mr-2 h-3 w-3 shrink-0 fill-current text-green-500"
+                        className="mr-2 size-3 shrink-0 fill-current text-green-500"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -140,7 +140,7 @@ export default function Zigzag() {
                     </li>
                     <li className="flex items-center">
                       <svg
-                        className="mr-2 h-3 w-3 shrink-0 fill-current text-green-500"
+                        className="mr-2 size-3 shrink-0 fill-current text-green-500"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -186,7 +186,7 @@ export default function Zigzag() {
                   <ul className="-mb-2 text-lg text-muted-foreground">
                     <li className="mb-2 flex items-center">
                       <svg
-                        className="mr-2 h-3 w-3 shrink-0 fill-current text-green-500"
+                        className="mr-2 size-3 shrink-0 fill-current text-green-500"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -196,7 +196,7 @@ export default function Zigzag() {
                     </li>
                     <li className="mb-2 flex items-center">
                       <svg
-                        className="mr-2 h-3 w-3 shrink-0 fill-current text-green-500"
+                        className="mr-2 size-3 shrink-0 fill-current text-green-500"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -206,7 +206,7 @@ export default function Zigzag() {
                     </li>
                     <li className="flex items-center">
                       <svg
-                        className="mr-2 h-3 w-3 shrink-0 fill-current text-green-500"
+                        className="mr-2 size-3 shrink-0 fill-current text-green-500"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >

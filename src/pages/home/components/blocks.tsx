@@ -26,7 +26,7 @@ export default function Blocks() {
               data-aos-anchor="[data-aos-id-blocks]"
             >
               <svg
-                className="mb-4 h-16 w-16"
+                className="mb-4 size-16"
                 viewBox="0 0 64 64"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -67,7 +67,7 @@ export default function Blocks() {
               data-aos-anchor="[data-aos-id-blocks]"
             >
               <svg
-                className="mb-4 h-16 w-16"
+                className="mb-4 size-16"
                 viewBox="0 0 64 64"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -108,7 +108,7 @@ export default function Blocks() {
               data-aos-anchor="[data-aos-id-blocks]"
             >
               <svg
-                className="mb-4 h-16 w-16"
+                className="mb-4 size-16"
                 viewBox="0 0 64 64"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -160,7 +160,7 @@ export default function Blocks() {
               data-aos-anchor="[data-aos-id-blocks]"
             >
               <svg
-                className="mb-4 h-16 w-16"
+                className="mb-4 size-16"
                 viewBox="0 0 64 64"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -205,7 +205,7 @@ export default function Blocks() {
               data-aos-anchor="[data-aos-id-blocks]"
             >
               <svg
-                className="mb-4 h-16 w-16"
+                className="mb-4 size-16"
                 viewBox="0 0 64 64"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -247,7 +247,7 @@ export default function Blocks() {
               data-aos-anchor="[data-aos-id-blocks]"
             >
               <svg
-                className="mb-4 h-16 w-16"
+                className="mb-4 size-16"
                 viewBox="0 0 64 64"
                 xmlns="http://www.w3.org/2000/svg"
               >

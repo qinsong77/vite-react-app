@@ -1,7 +1,7 @@
 import { GithubIcon, RssIcon } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
-import { ThemeToggle } from '@/components/ThemeToggle'
+import { ThemeToggle } from '@/components/theme-toggle'
 import { buttonVariants } from '@/components/ui/button'
 import { siteConfig } from '@/config'
 import { cn } from '@/lib/utils'

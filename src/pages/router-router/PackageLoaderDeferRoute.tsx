@@ -10,6 +10,7 @@ import {
 import { Spinner } from '@/components/spinner'
 import { Pos, getPackageLocation } from '@/service/custom'
 
+// todo: separate to another file if Route component will be used as Lazy loading: refer https://reacttraining.com/blog/spa-lazy-loading-pitfalls
 export const loader: LoaderFunction = ({ params }) => {
   // fixme what if params.packageId is missing
   const packageLocationPromise = getPackageLocation({

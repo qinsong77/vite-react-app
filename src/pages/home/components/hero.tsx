@@ -9,14 +9,14 @@ const ImageLogo = () => {
       <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
         <img
           src={viteLogo}
-          className="h-32 p-3 drop-shadow-lg filter transition hover:drop-shadow-2xl"
+          className="h-32 p-3 drop-shadow-lg transition hover:drop-shadow-2xl"
           alt="Vite logo"
         />
       </a>
       <a href="https://react.dev" target="_blank" rel="noreferrer">
         <img
           src={reactLogo}
-          className="logo-spin h-32 animate-spin p-3 drop-shadow-lg filter transition hover:drop-shadow-2xl"
+          className="logo-spin h-32 animate-spin p-3 drop-shadow-lg transition hover:drop-shadow-2xl"
           alt="React logo"
         />
       </a>

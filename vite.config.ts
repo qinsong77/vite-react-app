@@ -2,7 +2,7 @@
 /// <reference types="vite/client" />
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
-import checker from 'vite-plugin-checker'
+// import checker from 'vite-plugin-checker'
 import viteTsconfigPaths from 'vite-tsconfig-paths'
 
 // https://vitejs.dev/config/
@@ -11,19 +11,20 @@ export default defineConfig({
   server: {
     open: true,
     port: 3005,
+    proxy: {},
   },
   preview: {
     port: 3006,
   },
   plugins: [
     react(),
-    checker({
-      typescript: {
-        // todo how to ignore test stuff?
-        tsconfigPath: 'tsconfig.app.json',
-      },
-      // eslint: { lintCommand: 'eslint "./src/**/*.{js,jsx,ts,tsx}"' },
-    }),
+    // checker({
+    //   typescript: {
+    //     // todo how to ignore test stuff?
+    //     tsconfigPath: 'tsconfig.app.json',
+    //   },
+    //   // eslint: { lintCommand: 'eslint "./src/**/*.{js,jsx,ts,tsx}"' },
+    // }),
     viteTsconfigPaths(),
   ],
   test: {
@@ -33,6 +34,7 @@ export default defineConfig({
     exclude: ['**/node_modules/**', '**/e2e/**'],
     coverage: {
       include: ['src/**'],
+      provider: 'v8',
     },
     // https://cn.vitest.dev/guide/browser/
     // browser: {

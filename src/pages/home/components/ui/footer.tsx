@@ -13,7 +13,7 @@ export default function Footer() {
                 {/* Logo */}
                 <Link to="/" className="inline-block" aria-label="Cruip">
                   <svg
-                    className="h-8 w-8 fill-current text-purple-600"
+                    className="size-8 fill-current text-purple-600"
                     viewBox="0 0 32 32"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -168,7 +168,7 @@ export default function Footer() {
                   aria-label="Twitter"
                 >
                   <svg
-                    className="h-8 w-8 fill-current"
+                    className="size-8 fill-current"
                     viewBox="0 0 32 32"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -183,7 +183,7 @@ export default function Footer() {
                   aria-label="Github"
                 >
                   <svg
-                    className="h-8 w-8 fill-current"
+                    className="size-8 fill-current"
                     viewBox="0 0 32 32"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -198,7 +198,7 @@ export default function Footer() {
                   aria-label="Facebook"
                 >
                   <svg
-                    className="h-8 w-8 fill-current"
+                    className="size-8 fill-current"
                     viewBox="0 0 32 32"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -213,7 +213,7 @@ export default function Footer() {
                   aria-label="Instagram"
                 >
                   <svg
-                    className="h-8 w-8 fill-current"
+                    className="size-8 fill-current"
                     viewBox="0 0 32 32"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -230,7 +230,7 @@ export default function Footer() {
                   aria-label="Linkedin"
                 >
                   <svg
-                    className="h-8 w-8 fill-current"
+                    className="size-8 fill-current"
                     viewBox="0 0 32 32"
                     xmlns="http://www.w3.org/2000/svg"
                   >

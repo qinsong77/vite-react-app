@@ -1,7 +1,7 @@
 import { Navigate, RouteObject, createBrowserRouter } from 'react-router-dom'
 
-import { NotFound } from '@/components/NotFound'
 import { Layout } from '@/components/layout'
+import { NotFound } from '@/components/not-found'
 
 import { FormDemo } from './form-demo'
 import { Home } from './home'

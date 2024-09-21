@@ -3,7 +3,7 @@ import { PaymentMethod } from '../models/PaymentMethod'
 export const PaymentMethods = ({ options }: { options: PaymentMethod[] }) => (
   <>
     {options.map((method) => (
-      <label key={method.provider} className="mb-2 mt-2 block">
+      <label key={method.provider} className="my-2 block">
         <input
           type="radio"
           name="payment"

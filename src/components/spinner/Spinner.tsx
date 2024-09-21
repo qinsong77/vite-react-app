@@ -25,7 +25,7 @@ export const Spinner: FC<SpinnerProps> = ({
       <svg
         aria-hidden="true"
         className={clsx(
-          'h-8 w-8 animate-spin text-gray-200 dark:text-gray-600',
+          'size-8 animate-spin text-gray-200 dark:text-gray-600',
           colorVariants[color],
           sizeVariants[size]
         )}

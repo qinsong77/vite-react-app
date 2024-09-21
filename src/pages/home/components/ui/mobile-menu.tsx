@@ -47,7 +47,7 @@ export default function MobileMenu() {
       >
         <span className="sr-only">Menu</span>
         <svg
-          className="h-6 w-6 fill-current text-gray-300 transition duration-150 ease-in-out hover:text-gray-200"
+          className="size-6 fill-current text-gray-300 transition duration-150 ease-in-out hover:text-gray-200"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
