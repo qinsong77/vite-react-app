@@ -2,16 +2,17 @@
   "$schema": "https://turbo.build/schema.json",
   "tasks": {
     "type-check": {
-      "outputs": ["*.tsbuildinfo"]
+      "inputs": ["**/*.{ts,tsx}"]
     },
     "build": {
-      "dependsOn": ["type-check"],
-      "outputs": ["dist/**", "public/**"],
+      "dependsOn": ["type-check", "lint", "format", "test"],
+      "outputs": ["dist/**"],
       "env": []
     },
-    "lint": {
-      "outputs": [],
-      "inputs": ["eslint.*", "src/**"]
+    "lint": {},
+    "test": {},
+    "preview": {
+      "dependsOn": ["build"]
     }
   }
 }

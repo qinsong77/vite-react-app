@@ -12,6 +12,9 @@ export default defineConfig({
     open: true,
     port: 3005,
     proxy: {},
+    watch: {
+      ignored: ['**/*.test.ts', '**/*.test.tsx'],
+    },
   },
   preview: {
     port: 3006,
@@ -29,6 +32,11 @@ export default defineConfig({
   ],
   test: {
     globals: true,
+    expect: {
+      poll: {
+        timeout: 3000,
+      },
+    },
     environment: 'jsdom',
     setupFiles: './src/__tests__/setup-tests.ts',
     exclude: ['**/node_modules/**', '**/e2e/**'],
