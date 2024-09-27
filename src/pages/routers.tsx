@@ -1,7 +1,7 @@
 import { Navigate, RouteObject, createBrowserRouter } from 'react-router-dom'
 
+import { RouteErrorElement } from '@/components/errors/route-error-element'
 import { Layout } from '@/components/layout'
-import { NotFound } from '@/components/not-found'
 
 import { FormDemo } from './form-demo'
 import { Home } from './home'
@@ -73,7 +73,7 @@ export const routers = createBrowserRouter(
       path: '/',
       element: <Layout />,
       // 404
-      errorElement: <NotFound />,
+      errorElement: <RouteErrorElement />,
       children: mainRouters,
     },
   ],

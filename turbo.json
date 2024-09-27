@@ -5,12 +5,19 @@
       "inputs": ["**/*.{ts,tsx}"]
     },
     "build": {
-      "dependsOn": ["type-check", "lint", "format", "test"],
+      "dependsOn": ["type-check", "lint", "format", "test", "^build"],
       "outputs": ["dist/**"],
       "env": []
     },
     "lint": {},
-    "test": {},
+    "format": {},
+    "test": {
+      "inputs": ["**/*.test.ts", "**/*.test.tsx", "!e2e/**"]
+    },
+    "test:watch": {
+      "cache": false,
+      "persistent": true
+    },
     "preview": {
       "dependsOn": ["build"]
     }

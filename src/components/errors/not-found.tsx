@@ -1,9 +1,6 @@
-import { Link, useRouteError } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export const NotFound = () => {
-  const error = useRouteError()
-  console.error(error)
-
   return (
     // https://tailwindcomponents.com/component/404-error-page
     <div className="flex h-screen w-screen items-center bg-gray-50">

@@ -49,6 +49,7 @@
     "next-themes": "^0.3.0",
     "react": "19.0.0-rc-e4953922-20240919",
     "react-dom": "19.0.0-rc-e4953922-20240919",
+    "react-error-boundary": "^4.0.13",
     "react-router-dom": "^6.26.2",
     "recharts": "^2.12.7",
     "sonner": "^1.5.0",
