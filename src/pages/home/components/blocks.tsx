@@ -1,7 +1,7 @@
 export default function Blocks() {
   return (
     <section>
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <div className="mx-auto px-4 sm:px-6">
         <div className="border-t border-gray-800 py-12 md:py-20">
           {/* Section header */}
           <div className="mx-auto max-w-3xl pb-12 text-center md:pb-20">

@@ -26,7 +26,7 @@ const ImageLogo = () => {
 export default function Hero() {
   return (
     <section>
-      <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
+      <div className="relative mx-auto px-4 sm:px-6">
         {/* Illustration behind hero content */}
         <PageIllustration />
         {/* Hero content */}

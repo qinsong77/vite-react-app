@@ -1,7 +1,7 @@
 export default function Newsletter() {
   return (
     <section>
-      <div className="mx-auto mb-12 max-w-6xl px-4 sm:px-6 md:mb-16">
+      <div className="mx-auto mb-12 px-4 sm:px-6 md:mb-16">
         {/* CTA box */}
         <div
           className="relative bg-purple-600 px-8 py-10 md:px-12 md:py-16"
