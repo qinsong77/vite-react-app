@@ -25,21 +25,27 @@ This is a [Vite](https://vitejs.dev/) & [React](https://react.dev/) Boilerplate 
 - [x] [React Router](https://reactrouter.com/en/main) => [TanStack Router](https://tanstack.com/router/v1) ?
 - [ ] Zustand
 - [x] Generate Api with type: [orval](https://orval.dev/)
+  - **how to assert the response in UI due to the arval mock msw is random base on fake.js**
 - [ ] axios + React Query?
 - [ ] e2e test: playwright
   - [midscenejs](https://midscenejs.com/zh/docs/getting-started/introduction.html) using LLM to help testing.
 - [ ] Docker
 - [ ] Github actions/CI
-- test strategy - https://ethan.thoughtworkers.me/#/post/2023-12-10-react-unit-testing-best-practices-v2
 
 ## TODO
 
 - after gpr, run pnpm install automatically
 - Migrate eslint + prettier to https://biomejs.dev/guides/getting-started/ ?
 - using `import { userEvent } from '@vitest/browser/context'` https://cn.vitest.dev/guide/browser/examples.html#examples
-- add `eslint-plugin-testing-library`, add `eslint-plugin-jest-dom`, `eslint-plugin-vitest`
+- add `eslint-plugin-testing-library`, add `eslint-plugin-jest-dom`, `@vitest/eslint-plugin`
 
 ## Know issues
+
+## Project Guidelines
+
+### test strategy
+
+- [单元测试最佳实践与前端TDD](https://ethan.thoughtworkers.me/#/post/2023-12-10-react-unit-testing-best-practices-v2)
 
 ## Getting Started
 

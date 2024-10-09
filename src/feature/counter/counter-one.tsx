@@ -21,7 +21,6 @@ export function CounterOne() {
       <Label htmlFor="step">Step</Label>
       <Input
         id="step"
-        className="text-input"
         value={step}
         onChange={(e) => setStep(Number(e.target.value))}
       />

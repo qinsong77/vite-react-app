@@ -1,4 +1,11 @@
-import { FileText, Home, List, Menu, User } from 'lucide-react'
+import {
+  FileText,
+  Home,
+  List,
+  Menu,
+  MessageCircleCode,
+  User,
+} from 'lucide-react'
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
 
@@ -58,6 +65,12 @@ export const Main: React.FC = () => {
             </NavItem>
             <NavItem to="/main/profile" icon={<User className="size-4" />}>
               Profile
+            </NavItem>
+            <NavItem
+              to="/main/discussion"
+              icon={<MessageCircleCode className="size-4" />}
+            >
+              Discussion
             </NavItem>
           </ul>
         </nav>

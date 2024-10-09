@@ -1,2 +1,2 @@
-export * from './Discussion'
-export * from './Profile'
+export * from './discussion'
+export * from './profile'

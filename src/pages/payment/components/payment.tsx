@@ -7,8 +7,8 @@ import {
   formatCheckboxLabel,
   roundUpToNearestInteger,
 } from '../utils'
-import { DonationCheckbox } from './DonationCheckbox'
-import { PaymentMethods } from './PaymentMethods'
+import { DonationCheckbox } from './donation-checkbox'
+import { PaymentMethods } from './payment-methods'
 
 export const Payment = ({
   amount,

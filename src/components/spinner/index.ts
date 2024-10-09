@@ -1,2 +1,2 @@
-export * from './Spinner'
+export * from './spinner'
 export * from './type'

@@ -7,9 +7,11 @@ import { server } from '@/__mocks__/node'
 configure({
   asyncUtilTimeout: 3 * 1000,
 })
+
 beforeAll(() => {
   server.listen({ onUnhandledRequest: 'error' })
 })
+
 afterAll(() => {
   server.close()
 })

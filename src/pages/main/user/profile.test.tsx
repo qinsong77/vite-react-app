@@ -2,7 +2,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { render, screen, waitFor } from '@testing-library/react'
 import { ReactNode } from 'react'
 
-import { Profile } from './Profile'
+import { Profile } from './profile'
 
 const queryClient = new QueryClient()
 const wrapper = ({ children }: { children: ReactNode }) => (

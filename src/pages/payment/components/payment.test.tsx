@@ -3,7 +3,7 @@ import { userEvent } from '@testing-library/user-event'
 
 import { PaymentStrategy } from '../models/PaymentStrategy'
 import { roundUpToNearestHundred, roundUpToNearestTen } from '../utils'
-import { Payment } from './Payment'
+import { Payment } from './payment'
 
 describe('Payment', () => {
   it('renders payment title', () => {

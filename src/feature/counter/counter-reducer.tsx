@@ -1,5 +1,8 @@
 import { useEffect, useReducer } from 'react'
 
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
+
 type State = {
   count: number
   step: number
@@ -14,6 +17,7 @@ const initialState: State = {
   count: 0,
   step: 1,
 }
+
 function reducer(
   state: State,
   action: { type: Action.TICK } | { type: Action.STEP; val: number }
@@ -46,12 +50,9 @@ export function CounterReducer() {
   return (
     <>
       <h1>counter: {count}</h1>
-      <label htmlFor="step" className="text-input-label">
-        Step
-      </label>
-      <input
+      <Label htmlFor="step">Step</Label>
+      <Input
         id="step"
-        className="text-input"
         value={step}
         onChange={(e) => {
           // 更新step
