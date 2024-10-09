@@ -13,7 +13,6 @@ import { FormDemo } from './form-demo'
 import { Home } from './home'
 import { Introduce } from './introduce'
 import { Dashboard, Discussion, List, Main, Post, Profile } from './main'
-import { Payment } from './payment/components/payment'
 import { React19Routes } from './react-19/routes'
 import { ReactRouterPage } from './react-router'
 
@@ -61,5 +60,11 @@ export const mainRoutes: RouteObject[] = [
     ],
   },
   ...React19Routes,
-  { path: 'payment', element: <Payment amount={19.9} /> },
+  {
+    path: 'payment',
+    lazy: async () => {
+      const { PaymentPage } = await import('./payment')
+      return { Component: PaymentPage }
+    },
+  },
 ]
