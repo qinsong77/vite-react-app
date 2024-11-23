@@ -43,8 +43,11 @@ This is a [Vite](https://vitejs.dev/) & [React](https://react.dev/) Boilerplate 
 
 ## Project Guidelines
 
+refer this project: [bulletproof-react: React Vite Application](https://github.com/qinsong77/bulletproof-react/tree/master/apps/react-vite)
+
 ### test strategy
 
+- [react testing library Example](https://testing-library.com/docs/react-testing-library/example-intro/)
 - [单元测试最佳实践与前端TDD](https://ethan.thoughtworkers.me/#/post/2023-12-10-react-unit-testing-best-practices-v2)
 
 ## Getting Started
@@ -52,7 +55,6 @@ This is a [Vite](https://vitejs.dev/) & [React](https://react.dev/) Boilerplate 
 First, run the development server:
 
 ```bash
-# or
 pnpm dev
 ```
 
