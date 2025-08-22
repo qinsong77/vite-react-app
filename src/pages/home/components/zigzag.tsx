@@ -13,7 +13,7 @@ export default function Zigzag() {
               Reach goals that matter
             </div>
             <h1 className="mb-4 text-2xl">One product, unlimited solutions</h1>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-muted-foreground text-lg">
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
               officia deserunt mollit laborum — semper quis lectus nulla.
             </p>
@@ -46,12 +46,12 @@ export default function Zigzag() {
                     More speed. Less spend
                   </div>
                   <h3 className="mb-3 text-lg">Keep projects on schedule</h3>
-                  <p className="mb-4 text-base text-muted-foreground">
+                  <p className="text-muted-foreground mb-4 text-base">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua.
                   </p>
-                  <ul className="-mb-2 text-lg text-muted-foreground">
+                  <ul className="text-muted-foreground -mb-2 text-lg">
                     <li className="mb-2 flex items-center">
                       <svg
                         className="mr-2 size-3 shrink-0 fill-current text-green-500"
@@ -112,12 +112,12 @@ export default function Zigzag() {
                     More speed. Less spend
                   </div>
                   <h3 className="mb-3 text-lg">Keep projects on schedule</h3>
-                  <p className="mb-4 text-base text-muted-foreground">
+                  <p className="text-muted-foreground mb-4 text-base">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua.
                   </p>
-                  <ul className="-mb-2 text-lg text-muted-foreground">
+                  <ul className="text-muted-foreground -mb-2 text-lg">
                     <li className="mb-2 flex items-center">
                       <svg
                         className="mr-2 size-3 shrink-0 fill-current text-green-500"
@@ -178,12 +178,12 @@ export default function Zigzag() {
                     More speed. Less spend
                   </div>
                   <h3 className="mb-3 text-lg">Keep projects on schedule</h3>
-                  <p className="mb-4 text-base text-muted-foreground">
+                  <p className="text-muted-foreground mb-4 text-base">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua.
                   </p>
-                  <ul className="-mb-2 text-lg text-muted-foreground">
+                  <ul className="text-muted-foreground -mb-2 text-lg">
                     <li className="mb-2 flex items-center">
                       <svg
                         className="mr-2 size-3 shrink-0 fill-current text-green-500"

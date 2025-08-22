@@ -10,6 +10,7 @@ import {
   SelectValue,
 } from '@/components/ui/select'
 import { Separator } from '@/components/ui/separator'
+
 import { findPetsByStatus } from '@/service/petstore/endpoint'
 import { FindPetsByStatusStatus } from '@/service/petstore/model'
 
@@ -51,7 +52,7 @@ const UseHookExample = () => {
       <Separator className="mt-4" />
       <Suspense
         fallback={
-          <p className="my-4 text-sm text-muted-foreground">loading...</p>
+          <p className="text-muted-foreground my-4 text-sm">loading...</p>
         }
       >
         <PetsStatusList findPetsByStatusPromise={findPetsByStatusPromise} />
@@ -71,8 +72,8 @@ const PetsStatusList = ({
       {resp.map(({ name, status, photoUrls }) => (
         <ul className="my-2 gap-1 py-2" key={name}>
           <li>name: {name}</li>
-          <li>status: {status}</li>
-          <li className="text-sm text-muted-foreground">
+          <li>status: {status ?? '-'}</li>
+          <li className="text-muted-foreground text-sm">
             photoUrls: {photoUrls.join(',')}
           </li>
         </ul>

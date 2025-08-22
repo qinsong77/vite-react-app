@@ -16,7 +16,7 @@ const ImageLogo = () => {
       <a href="https://react.dev" target="_blank" rel="noreferrer">
         <img
           src={reactLogo}
-          className="logo-spin h-32 animate-spin p-3 drop-shadow-lg transition hover:drop-shadow-2xl"
+          className="h-32 animate-spin p-3 drop-shadow-lg transition hover:drop-shadow-2xl"
           alt="React logo"
         />
       </a>
@@ -30,7 +30,7 @@ export default function Hero() {
         {/* Illustration behind hero content */}
         <PageIllustration />
         {/* Hero content */}
-        <div className="relative pb-10 pt-16 md:pb-16 md:pt-20">
+        <div className="relative pt-16 pb-10 md:pt-20 md:pb-16">
           {/* Section header */}
           <ImageLogo />
           <div className="mx-auto max-w-3xl text-center">
@@ -38,7 +38,7 @@ export default function Hero() {
               Landing template for startups
             </h1>
             <p
-              className="mb-8 text-lg italic text-muted-foreground"
+              className="text-muted-foreground mb-8 text-lg italic"
               data-aos="fade-up"
               data-aos-delay="200"
             >
@@ -48,7 +48,7 @@ export default function Hero() {
             <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
                 <a
-                  className="btn mb-4 w-full bg-purple-600 text-white hover:bg-purple-700 sm:mb-0 sm:w-auto"
+                  className="mb-4 w-full rounded-lg bg-purple-600 px-4 py-2.5 text-white hover:bg-purple-700 sm:mb-0 sm:w-auto"
                   href="#0"
                 >
                   Start free trial
@@ -56,7 +56,7 @@ export default function Hero() {
               </div>
               <div data-aos="fade-up" data-aos-delay="600">
                 <a
-                  className="btn w-full bg-gray-700 text-white hover:bg-gray-800 sm:ml-4 sm:w-auto"
+                  className="w-full rounded-lg bg-gray-700 px-4 py-2.5 text-white hover:bg-gray-800 sm:ml-4 sm:w-auto"
                   href="#0"
                 >
                   Learn more

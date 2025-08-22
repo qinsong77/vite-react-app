@@ -7,7 +7,7 @@ import {
   User,
 } from 'lucide-react'
 import React from 'react'
-import { Link, Outlet } from 'react-router-dom'
+import { Link, Outlet } from 'react-router'
 
 interface NavItemProps {
   to: string
@@ -19,7 +19,7 @@ const NavItem: React.FC<NavItemProps> = ({ to, icon, children }) => (
   <li>
     <Link
       to={to}
-      className="flex items-center space-x-3 rounded-lg px-3 py-2 text-secondary-foreground transition-colors hover:bg-secondary-foreground/10 hover:text-secondary-foreground"
+      className="text-secondary-foreground hover:bg-secondary-foreground/10 hover:text-secondary-foreground flex items-center space-x-3 rounded-lg px-3 py-2 transition-colors"
     >
       {icon}
       <span>{children}</span>
@@ -32,22 +32,22 @@ export const Main: React.FC = () => {
 
   return (
     <div
-      className="flex flex-col bg-background md:flex-row"
+      className="bg-background flex flex-col md:flex-row"
       style={{ minHeight: 'calc(100vh - 128px)' }}
     >
       {/* Mobile menu button */}
       <button
-        className="fixed left-4 top-14 z-20 rounded-md bg-secondary p-2 md:hidden"
+        className="bg-secondary fixed top-14 left-4 z-20 rounded-md p-2 md:hidden"
         onClick={() => setIsSidebarOpen(!isSidebarOpen)}
       >
-        <Menu className="size-6 text-secondary-foreground" />
+        <Menu className="text-secondary-foreground size-6" />
       </button>
 
       {/* Sidebar */}
       <aside
-        className={`w-64 overflow-y-auto bg-secondary text-secondary-foreground transition-transform duration-300 ease-in-out ${
+        className={`bg-secondary text-secondary-foreground w-64 overflow-y-auto transition-transform duration-300 ease-in-out ${
           isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
-        } fixed left-0 top-0 z-10 h-full md:static md:h-auto md:translate-x-0`}
+        } fixed top-0 left-0 z-10 h-full md:static md:h-auto md:translate-x-0`}
       >
         <nav className="p-4">
           <h3 className="mb-6 text-lg font-semibold tracking-tight">

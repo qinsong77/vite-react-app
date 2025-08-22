@@ -4,7 +4,7 @@ import { defineConfig } from 'orval'
 export default defineConfig({
   petstore: {
     output: {
-      baseUrl: '/api/v3',
+      baseUrl: '/v3',
       target: 'src/service/petstore/endpoint.ts',
       schemas: 'src/service/petstore/model',
       mock: true,

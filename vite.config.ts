@@ -1,8 +1,8 @@
 /// <reference types="vitest" />
 /// <reference types="vite/client" />
+import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
-// import checker from 'vite-plugin-checker'
 import viteTsconfigPaths from 'vite-tsconfig-paths'
 
 // https://vitejs.dev/config/
@@ -19,17 +19,7 @@ export default defineConfig({
   preview: {
     port: 3006,
   },
-  plugins: [
-    react(),
-    // checker({
-    //   typescript: {
-    //     // todo how to ignore test stuff?
-    //     tsconfigPath: 'tsconfig.app.json',
-    //   },
-    //   // eslint: { lintCommand: 'eslint "./src/**/*.{js,jsx,ts,tsx}"' },
-    // }),
-    viteTsconfigPaths(),
-  ],
+  plugins: [tailwindcss(), react(), viteTsconfigPaths()],
   test: {
     globals: true,
     expect: {

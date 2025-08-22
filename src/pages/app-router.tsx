@@ -1,7 +1,9 @@
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter } from 'react-router'
 
 import { RouteErrorElement } from '@/components/errors/route-error-element'
 import { Layout } from '@/components/layout'
+
+import { env } from '@/config'
 
 import { mainRoutes } from './routes'
 
@@ -17,7 +19,7 @@ const router = createBrowserRouter(
     },
   ],
   {
-    basename: import.meta.env.BASE_URL,
+    basename: env.BASE_URL,
   }
 )
 

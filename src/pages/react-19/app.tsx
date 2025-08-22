@@ -1,4 +1,4 @@
-import { Link, Outlet } from 'react-router-dom'
+import { Link, Outlet } from 'react-router'
 
 import {
   NavigationMenu,
@@ -21,6 +21,10 @@ const routes = [
     title: 'useDeferredValue',
     href: '/useDeferredValue',
   },
+  {
+    title: 'useActionState',
+    href: '/useActionState',
+  },
 ]
 export const App = () => {
   return (
@@ -30,11 +34,12 @@ export const App = () => {
           <NavigationMenuList>
             {routes.map(({ title, href }) => (
               <NavigationMenuItem key={href}>
-                <Link to={`/react19${href}`}>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    {title}
-                  </NavigationMenuLink>
-                </Link>
+                <NavigationMenuLink
+                  className={navigationMenuTriggerStyle()}
+                  asChild
+                >
+                  <Link to={`/react19${href}`}>{title}</Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
             ))}
           </NavigationMenuList>

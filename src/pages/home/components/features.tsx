@@ -8,7 +8,7 @@ export default function Features() {
             <h2 className="mb-4 text-2xl">
               The majority our customers do not understand their workflows.
             </h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-muted-foreground text-lg">
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
               officia deserunt mollit anim id est laborum.
             </p>
@@ -52,7 +52,7 @@ export default function Features() {
                 />
               </svg>
               <h4 className="mb-2 text-lg">Instant Features</h4>
-              <p className="text-center text-muted-foreground">
+              <p className="text-muted-foreground text-center">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                 cupidatat.
@@ -93,7 +93,7 @@ export default function Features() {
                 />
               </svg>
               <h4 className="mb-2 text-lg">Instant Features</h4>
-              <p className="text-center text-muted-foreground">
+              <p className="text-muted-foreground text-center">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                 cupidatat.
@@ -145,7 +145,7 @@ export default function Features() {
                 </g>
               </svg>
               <h4 className="mb-2 text-lg">Instant Features</h4>
-              <p className="text-center text-muted-foreground">
+              <p className="text-muted-foreground text-center">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                 cupidatat.
@@ -190,7 +190,7 @@ export default function Features() {
                 </g>
               </svg>
               <h4 className="mb-2 text-lg">Instant Features</h4>
-              <p className="text-center text-muted-foreground">
+              <p className="text-muted-foreground text-center">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                 cupidatat.
@@ -232,7 +232,7 @@ export default function Features() {
                 </g>
               </svg>
               <h4 className="mb-2 text-lg">Instant Features</h4>
-              <p className="text-center text-muted-foreground">
+              <p className="text-muted-foreground text-center">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                 cupidatat.
@@ -281,7 +281,7 @@ export default function Features() {
                 </g>
               </svg>
               <h4 className="mb-2 text-lg">Instant Features</h4>
-              <p className="text-center text-muted-foreground">
+              <p className="text-muted-foreground text-center">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                 cupidatat.

@@ -1,17 +1,17 @@
-import { Link, Outlet } from 'react-router-dom'
+import { Link, Outlet } from 'react-router'
 
 export const ReactRouterPage = () => {
   return (
     <div>
       <Link
         to="/react-router/loader-defer-location/290"
-        className="block text-foreground/60 transition-colors hover:text-foreground/80"
+        className="text-foreground/60 hover:text-foreground/80 block transition-colors"
       >
         router defer
       </Link>
       <Link
         to="/react-router/loader-location/290"
-        className="block text-foreground/60 transition-colors hover:text-foreground/80"
+        className="text-foreground/60 hover:text-foreground/80 block transition-colors"
       >
         router loader
       </Link>

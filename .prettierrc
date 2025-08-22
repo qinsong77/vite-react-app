@@ -10,10 +10,11 @@
   ],
   "tailwindFunctions": ["clsx", "cn", "cva"],
   "importOrder": [
-    "^@core/(.*)$",
-    "<THIRD_PARTY_MODULES>",
+    "^@/components/ui/(.*)$",
+    "^@/components/(.*)$",
+    "^@/service/(.*)$",
+    "^@/feature/(.*)$",
     "^@/(.*)$",
-    "^@ui/(.*)$",
     "^[./]"
   ],
   "importOrderSeparation": true,

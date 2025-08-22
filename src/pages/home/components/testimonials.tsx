@@ -10,7 +10,7 @@ export default function Testimonials() {
           {/* Section header */}
           <div className="mx-auto max-w-3xl pb-12 text-center md:pb-20">
             <h2 className="mb-4 text-2xl">Don&apos;t take our word for it</h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-muted-foreground text-lg">
               Vitae aliquet nec ullamcorper sit amet risus nullam eget felis
               semper quis lectus nulla at volutpat diam ut venenatis tellus—in
               ornare.
@@ -34,7 +34,7 @@ export default function Testimonials() {
                     alt="Testimonial 01"
                   />
                   <svg
-                    className="absolute right-0 top-0 -mr-3 h-5 w-6 fill-current text-purple-600"
+                    className="absolute top-0 right-0 -mr-3 h-5 w-6 fill-current text-purple-600"
                     viewBox="0 0 24 20"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -49,7 +49,7 @@ export default function Testimonials() {
                 functioned without it before.
               </blockquote>
               <div className="mt-6 border-t border-gray-700 pt-5 font-medium text-gray-700">
-                <cite className="not-italic text-gray-200">Anastasia Dan</cite>{' '}
+                <cite className="text-gray-200 not-italic">Anastasia Dan</cite>{' '}
                 -{' '}
                 <a
                   className="text-purple-600 transition duration-150 ease-in-out hover:text-gray-200"
@@ -76,7 +76,7 @@ export default function Testimonials() {
                     alt="Testimonial 02"
                   />
                   <svg
-                    className="absolute right-0 top-0 -mr-3 h-5 w-6 fill-current text-purple-600"
+                    className="absolute top-0 right-0 -mr-3 h-5 w-6 fill-current text-purple-600"
                     viewBox="0 0 24 20"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -91,7 +91,7 @@ export default function Testimonials() {
                 functioned without it before.
               </blockquote>
               <div className="mt-6 border-t border-gray-700 pt-5 font-medium text-gray-700">
-                <cite className="not-italic text-gray-200">Anastasia Dan</cite>{' '}
+                <cite className="text-gray-200 not-italic">Anastasia Dan</cite>{' '}
                 -{' '}
                 <a
                   className="text-purple-600 transition duration-150 ease-in-out hover:text-gray-200"
@@ -118,7 +118,7 @@ export default function Testimonials() {
                     alt="Testimonial 03"
                   />
                   <svg
-                    className="absolute right-0 top-0 -mr-3 h-5 w-6 fill-current text-purple-600"
+                    className="absolute top-0 right-0 -mr-3 h-5 w-6 fill-current text-purple-600"
                     viewBox="0 0 24 20"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -133,7 +133,7 @@ export default function Testimonials() {
                 functioned without it before.
               </blockquote>
               <div className="mt-6 border-t border-gray-700 pt-5 font-medium text-gray-700">
-                <cite className="not-italic text-gray-200">Anastasia Dan</cite>{' '}
+                <cite className="text-gray-200 not-italic">Anastasia Dan</cite>{' '}
                 -{' '}
                 <a
                   className="text-purple-600 transition duration-150 ease-in-out hover:text-gray-200"

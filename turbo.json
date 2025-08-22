@@ -2,21 +2,31 @@
   "$schema": "https://turbo.build/schema.json",
   "tasks": {
     "type-check": {
-      "inputs": ["**/*.{ts,tsx}"]
+      "inputs": ["**/*.{ts,tsx}", "tsconfig*.json"],
+      "outputs": []
     },
     "build": {
-      "dependsOn": ["type-check", "lint", "format", "test", "^build"],
+      "dependsOn": ["type-check", "lint", "format", "test"],
       "outputs": ["dist/**"],
       "env": []
     },
-    "lint": {},
-    "format": {},
+    "lint": {
+      "inputs": ["**/*.{js,ts,tsx,jsx}"],
+      "outputs": []
+    },
+    "format": {
+      "inputs": ["**/*.{js,ts,tsx,jsx,css,md}"],
+      "outputs": []
+    },
     "test": {
-      "inputs": ["**/*.test.ts", "**/*.test.tsx", "!e2e/**"]
+      "dependsOn": ["type-check"],
+      "inputs": ["**/*.test.{ts,tsx}", "**/*.spec.{ts,tsx}", "!e2e/**"],
+      "outputs": ["coverage/**"]
     },
     "test:watch": {
       "cache": false,
-      "persistent": true
+      "persistent": true,
+      "dependsOn": ["type-check"]
     },
     "preview": {
       "dependsOn": ["build"]

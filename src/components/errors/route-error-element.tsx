@@ -1,10 +1,11 @@
-import { isRouteErrorResponse, useRouteError } from 'react-router-dom'
+import * as React from 'react'
+import { isRouteErrorResponse, useRouteError } from 'react-router'
 
 import { ErrorFallback } from '@/components/errors/error-fallback'
 
 import { NotFound } from './not-found'
 
-export const RouteErrorElement = () => {
+export const RouteErrorElement = (): React.ReactNode => {
   const error = useRouteError()
   if (isRouteErrorResponse(error)) {
     if (error.status === 404) {

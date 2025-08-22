@@ -1,4 +1,4 @@
-import { Navigate, RouteObject } from 'react-router-dom'
+import { Navigate, RouteObject } from 'react-router'
 
 import {
   PackageLoaderDeferRoute,
@@ -54,11 +54,12 @@ export const mainRoutes: RouteObject[] = [
       },
       {
         path: 'loader-defer-location/:packageId',
-        element: <PackageLoaderDeferRoute />,
+        Component: PackageLoaderDeferRoute,
         loader: PackageRouteDeferLoader,
       },
     ],
   },
+
   ...React19Routes,
   {
     path: 'payment',
@@ -67,4 +68,4 @@ export const mainRoutes: RouteObject[] = [
       return { Component: PaymentPage }
     },
   },
-]
+] as const

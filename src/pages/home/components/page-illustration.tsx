@@ -1,13 +1,13 @@
 export default function PageIllustration() {
   return (
     <div
-      className="pointer-events-none absolute left-0 top-0 flex w-full justify-between max-lg:hidden"
+      className="pointer-events-none absolute top-0 left-0 flex w-full justify-between max-lg:hidden"
       aria-hidden="true"
       data-aos="fade-up"
       data-aos-delay="400"
     >
       <svg
-        className="-ml-24 -mt-12 opacity-45"
+        className="-mt-12 -ml-24 opacity-45"
         width="564"
         height="552"
         viewBox="0 0 564 552"

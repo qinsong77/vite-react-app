@@ -3,12 +3,13 @@ import { createRequest } from '@/service/axios'
 export type Pos = {
   latitude: number
   longitude: number
+  id: number
 }
 
 export const getPackageLocation = ({ id }: { id: string }) => {
   return createRequest<Pos>({
     method: 'get',
-    url: '/api/customer/getPackageLocation',
+    url: '/customer/getPackageLocation',
     params: {
       id,
     },

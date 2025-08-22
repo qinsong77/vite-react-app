@@ -1,30 +1,23 @@
-import { Suspense } from 'react'
-import {
-  Await,
-  LoaderFunction,
-  defer,
-  useAsyncValue,
-  useLoaderData,
-} from 'react-router-dom'
+import { Suspense, use } from 'react'
+import { LoaderFunction, useLoaderData } from 'react-router'
 
 import { Spinner } from '@/components/spinner'
+
 import { Pos, getPackageLocation } from '@/service/custom'
 
 // todo: separate to another file if Route component will be used as Lazy loading: refer https://reacttraining.com/blog/spa-lazy-loading-pitfalls
 export const loader: LoaderFunction = ({ params }) => {
-  // fixme what if params.packageId is missing
-  const packageLocationPromise = getPackageLocation({
-    id: params.packageId ?? '',
-  })
-
-  return defer({
-    res: packageLocationPromise,
-  })
+  return {
+    packageLocationPromise: getPackageLocation({
+      id: params.packageId ?? '',
+    }),
+  }
 }
 
 export function PackageLoaderDeferRoute() {
-  const data = useLoaderData() as { res: Pos }
-
+  const { packageLocationPromise } = useLoaderData<{
+    packageLocationPromise: ReturnType<typeof getPackageLocation>
+  }>()
   return (
     <main>
       <h1>Lets locate your package</h1>
@@ -36,23 +29,20 @@ export function PackageLoaderDeferRoute() {
           </>
         }
       >
-        <Await
-          resolve={data.res}
-          errorElement={<p>Error loading package location!</p>}
-        >
-          <PackageLocation />
-        </Await>
+        <NonCriticalUI p={packageLocationPromise} />
       </Suspense>
     </main>
   )
 }
 
-function PackageLocation() {
-  const packageLocation = useAsyncValue() as Pos
+function NonCriticalUI({ p }: { p: Promise<Pos> }) {
+  const pos = use(p)
   return (
-    <p>
-      Your package is at {packageLocation.latitude} lat and{' '}
-      {packageLocation.longitude} long.
-    </p>
+    <div>
+      <p>response param id is : {pos.id}</p>
+      <p>
+        Your package is at {pos.latitude} lat and {pos.longitude} long.
+      </p>
+    </div>
   )
 }

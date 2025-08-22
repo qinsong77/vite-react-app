@@ -1,8 +1,10 @@
 import Axios, { AxiosRequestConfig, InternalAxiosRequestConfig } from 'axios'
 import { toast } from 'sonner'
 
+import { env } from '@/config'
+
 const AXIOS_INSTANCE = Axios.create({
-  baseURL: import.meta.env.VITE_APP_API_BASE_URL || '',
+  baseURL: env.API_BASE_URL,
   timeout: 15 * 1000,
   adapter: 'fetch',
   headers: {
@@ -22,7 +24,7 @@ AXIOS_INSTANCE.interceptors.response.use(
   },
   (error) => {
     // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access,@typescript-eslint/no-unsafe-assignment
-    const message = error.response?.data?.message || error.message
+    const message = error.response?.data?.message ?? error.message
     // eslint-disable-next-line @typescript-eslint/no-unused-expressions
     message &&
       toast.error('Error', {

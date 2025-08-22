@@ -5,7 +5,7 @@ This is a [Vite](https://vitejs.dev/) & [React](https://react.dev/) Boilerplate 
 ## Features
 
 - [x] Vite Latest
-- [x] React 18.3.1
+- [x] React ~~18.3.1~~ => 19
 - [x] Typescript
 - [x] pnpm
 - [x] Test

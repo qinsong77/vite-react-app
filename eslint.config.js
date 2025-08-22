@@ -13,7 +13,7 @@ export default tseslint.config(
   { ignores: ['dist', 'src/components/ui', 'src/service/petstore'] },
   {
     files: ['**/*.{ts,tsx}'],
-    settings: { react: { version: '18.3' } },
+    settings: { react: { version: '19.1' } },
     extends: [
       js.configs.recommended,
       // ...tseslint.configs.recommended

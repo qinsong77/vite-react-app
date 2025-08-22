@@ -1,5 +1,5 @@
 import { Lollipop } from 'lucide-react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router'
 
 import { siteConfig } from '@/config'
 import { cn } from '@/lib/utils'
@@ -19,7 +19,7 @@ export function MainNav() {
         <Link
           to="/main"
           className={cn(
-            'transition-colors hover:text-foreground/80',
+            'hover:text-foreground/80 transition-colors',
             pathname.startsWith('/main')
               ? 'text-foreground'
               : 'text-foreground/60'
@@ -30,7 +30,7 @@ export function MainNav() {
         <Link
           to="/introduce"
           className={cn(
-            'hidden text-foreground/60 transition-colors hover:text-foreground/80 2xl:block',
+            'text-foreground/60 hover:text-foreground/80 hidden transition-colors 2xl:block',
             pathname.startsWith('/introduce')
               ? 'text-foreground'
               : 'text-foreground/60'
@@ -41,7 +41,7 @@ export function MainNav() {
         <Link
           to="/payment"
           className={cn(
-            'transition-colors hover:text-foreground/80',
+            'hover:text-foreground/80 transition-colors',
             pathname.startsWith('/payment')
               ? 'text-foreground'
               : 'text-foreground/60'
@@ -52,7 +52,7 @@ export function MainNav() {
         <Link
           to="/form-demo"
           className={cn(
-            'hidden text-foreground/60 transition-colors hover:text-foreground/80 2xl:block',
+            'text-foreground/60 hover:text-foreground/80 hidden transition-colors 2xl:block',
             pathname.startsWith('/form-demo')
               ? 'text-foreground'
               : 'text-foreground/60'
@@ -63,7 +63,7 @@ export function MainNav() {
         <Link
           to="/react-router"
           className={cn(
-            'transition-colors hover:text-foreground/80',
+            'hover:text-foreground/80 transition-colors',
             pathname.startsWith('/react-router')
               ? 'text-foreground'
               : 'text-foreground/60'
@@ -74,7 +74,7 @@ export function MainNav() {
         <Link
           to="/react19"
           className={cn(
-            'transition-colors hover:text-foreground/80',
+            'hover:text-foreground/80 transition-colors',
             pathname.startsWith('/react19')
               ? 'text-foreground'
               : 'text-foreground/60'
@@ -86,7 +86,7 @@ export function MainNav() {
           target="_blank"
           to={siteConfig.links.repoGithub}
           className={cn(
-            'hidden text-foreground/60 transition-colors hover:text-foreground/80 2xl:block'
+            'text-foreground/60 hover:text-foreground/80 hidden transition-colors 2xl:block'
           )}
         >
           GitHub

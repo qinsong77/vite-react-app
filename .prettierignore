@@ -7,7 +7,9 @@ pnpm-lock.yaml
 coverage
 .husky
 
+# specific files
 src/components/ui
+src/service/petstore
 
 # Ignore all HTML files:
 **/*.html

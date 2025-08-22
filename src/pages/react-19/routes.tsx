@@ -1,6 +1,7 @@
-import { RouteObject } from 'react-router-dom'
+import { RouteObject } from 'react-router'
 
 import { App } from './app'
+import { UseActionState } from './use-action-state'
 import { UseDeferredValueHookPage } from './use-deferred-value-hook'
 import { UseHooksPage } from './use-hook'
 import { UseOptimisticHook } from './use-optimistic-hook'
@@ -21,6 +22,10 @@ export const React19Routes: RouteObject[] = [
       {
         path: 'useOptimistic',
         element: <UseOptimisticHook />,
+      },
+      {
+        path: 'useActionState',
+        element: <UseActionState />,
       },
     ],
   },

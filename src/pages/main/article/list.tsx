@@ -1,6 +1,7 @@
-import { useParams } from 'react-router-dom'
+import { useParams } from 'react-router'
 
 import { Button } from '@/components/ui/button'
+
 import { useBearStore } from '@/store/useBearStore'
 
 export const List = () => {

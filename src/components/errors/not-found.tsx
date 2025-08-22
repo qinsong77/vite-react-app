@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 
 export const NotFound = () => {
   return (
@@ -9,12 +9,12 @@ export const NotFound = () => {
           <div className="font-dark font-extra bold mb-8 text-7xl text-green-500">
             404
           </div>
-          <p className="mb-8 text-2xl font-light leading-normal md:text-3xl">
+          <p className="mb-8 text-2xl leading-normal font-light md:text-3xl">
             Sorry we couldn&apos;t find the page you&apos;re looking for
           </p>
 
           <Link
-            className="duration-400 inline rounded-lg border border-transparent bg-green-600 px-5 py-3 text-sm font-medium leading-5 text-white shadow-2xl transition-all hover:bg-red-700 focus:outline-none active:bg-red-600"
+            className="inline rounded-lg border border-transparent bg-green-600 px-5 py-3 text-sm leading-5 font-medium text-white shadow-2xl transition-all duration-400 hover:bg-red-700 focus:outline-none active:bg-red-600"
             to="/"
           >
             back to homepage
