@@ -48,3 +48,8 @@ export const Payment = ({
     </div>
   )
 }
+
+export function Test() {
+  const Component = 'div'
+  return <Component>123</Component>
+}

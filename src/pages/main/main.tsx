@@ -1,11 +1,4 @@
-import {
-  FileText,
-  Home,
-  List,
-  Menu,
-  MessageCircleCode,
-  User,
-} from 'lucide-react'
+import { Calculator, Code, Database, FileText, Home, Menu } from 'lucide-react'
 import React from 'react'
 import { Link, Outlet } from 'react-router'
 
@@ -57,20 +50,47 @@ export const Main: React.FC = () => {
             <NavItem to="/main" icon={<Home className="size-4" />}>
               Main
             </NavItem>
-            <NavItem to="/main/article" icon={<FileText className="size-4" />}>
-              Article
-            </NavItem>
-            <NavItem to="/main/list/1" icon={<List className="size-4" />}>
-              Article List One
-            </NavItem>
-            <NavItem to="/main/profile" icon={<User className="size-4" />}>
-              Profile
+            <NavItem
+              to="/main/state-management/zustand/1"
+              icon={<FileText className="size-4" />}
+            >
+              Zustand Demo
             </NavItem>
             <NavItem
-              to="/main/discussion"
-              icon={<MessageCircleCode className="size-4" />}
+              to="/main/state-management/react-state"
+              icon={<Code className="size-4" />}
             >
-              Discussion
+              React State Demo
+            </NavItem>
+            <NavItem
+              to="/main/data-fetching/api"
+              icon={<Database className="size-4" />}
+            >
+              API Demo
+            </NavItem>
+            <NavItem
+              to="/main/data-fetching/counter"
+              icon={<Calculator className="size-4" />}
+            >
+              Counter Demo
+            </NavItem>
+            <NavItem
+              to="/main/useeffect-run-seq"
+              icon={<Code className="size-4" />}
+            >
+              UseEffect Run Seq
+            </NavItem>
+            <NavItem
+              to="/main/form-demo"
+              icon={<FileText className="size-4" />}
+            >
+              Form Demo
+            </NavItem>
+            <NavItem
+              to="/main/react-router-demo"
+              icon={<Code className="size-4" />}
+            >
+              React Router Demo
             </NavItem>
           </ul>
         </nav>

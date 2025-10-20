@@ -75,7 +75,6 @@ TBD
 
 - https://react.dev/reference/react-dom/server/renderToReadableStream
 - https://reactrouter.com/en/main/guides/ssr
-- https://github.com/wqhui/vite-react-ssr
 
 ---
 

@@ -49,28 +49,7 @@ export function MainNav() {
         >
           payment
         </Link>
-        <Link
-          to="/form-demo"
-          className={cn(
-            'text-foreground/60 hover:text-foreground/80 hidden transition-colors 2xl:block',
-            pathname.startsWith('/form-demo')
-              ? 'text-foreground'
-              : 'text-foreground/60'
-          )}
-        >
-          form demo
-        </Link>
-        <Link
-          to="/react-router"
-          className={cn(
-            'hover:text-foreground/80 transition-colors',
-            pathname.startsWith('/react-router')
-              ? 'text-foreground'
-              : 'text-foreground/60'
-          )}
-        >
-          react-router
-        </Link>
+
         <Link
           to="/react19"
           className={cn(

@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "🔄 检测到代码合并..."
+
+# 检查 package.json 或 pnpm-lock.yaml 是否有变化
+if git diff-tree --name-only --no-commit-id HEAD~1 HEAD | grep -E "(package\.json|pnpm-lock\.yaml)" > /dev/null; then
+    echo "📦 检测到依赖文件变化，正在安装依赖..."
+    pnpm install
+    echo "✅ 依赖安装完成！"
+else
+    echo "ℹ️  依赖文件无变化，跳过安装"
+fi

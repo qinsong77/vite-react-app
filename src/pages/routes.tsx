@@ -1,27 +1,44 @@
 import { Navigate, RouteObject } from 'react-router'
 
-import {
-  PackageLoaderDeferRoute,
-  loader as PackageRouteDeferLoader,
-} from '@/pages/react-router/package-loader-defer-route'
-import {
-  PackageLoaderRoute,
-  loader as PackageRouteLoader,
-} from '@/pages/react-router/package-loader-route'
+import { convertRouteAndLoader } from '@/lib/convert-route-and-loader'
 
-import { FormDemo } from './form-demo'
 import { Home } from './home'
 import { Introduce } from './introduce'
-import { Dashboard, Discussion, List, Main, Post, Profile } from './main'
+import {
+  ApiDemo,
+  CounterDemo,
+  Dashboard,
+  FormDemo,
+  Main,
+  ReactStateDemo,
+  ZustandDemo,
+} from './main'
+import { ReactRouterDemo } from './main/react-router-demo'
 import { React19Routes } from './react-19/routes'
-import { ReactRouterPage } from './react-router'
 
 const authRoutes: RouteObject[] = [
   { index: true, element: <Dashboard /> },
-  { path: 'article', element: <Post /> },
-  { path: 'profile', element: <Profile /> },
-  { path: 'list/:listId', element: <List /> },
-  { path: 'discussion', element: <Discussion /> },
+
+  {
+    path: 'useeffect-run-seq',
+    lazy: () => import('./main/useeffect-run-seq').then(convertRouteAndLoader),
+  },
+  { path: 'form-demo', element: <FormDemo /> },
+  { path: 'react-router-demo', element: <ReactRouterDemo /> },
+  {
+    path: 'react-router-demo/loader/:packageId',
+    lazy: () =>
+      import('./main/react-router-demo/loader').then(convertRouteAndLoader),
+  },
+  {
+    path: 'react-router-demo/defer/:packageId',
+    lazy: () =>
+      import('./main/react-router-demo/defer').then(convertRouteAndLoader),
+  },
+  { path: 'state-management/zustand/:listId', element: <ZustandDemo /> },
+  { path: 'state-management/react-state', element: <ReactStateDemo /> },
+  { path: 'data-fetching/api', element: <ApiDemo /> },
+  { path: 'data-fetching/counter', element: <CounterDemo /> },
   { path: '*', element: <Navigate to="." /> },
 ]
 
@@ -39,27 +56,6 @@ export const mainRoutes: RouteObject[] = [
     path: '/introduce',
     element: <Introduce />,
   },
-  {
-    path: '/form-demo',
-    element: <FormDemo />,
-  },
-  {
-    path: '/react-router',
-    element: <ReactRouterPage />,
-    children: [
-      {
-        path: 'loader-location/:packageId',
-        element: <PackageLoaderRoute />,
-        loader: PackageRouteLoader,
-      },
-      {
-        path: 'loader-defer-location/:packageId',
-        Component: PackageLoaderDeferRoute,
-        loader: PackageRouteDeferLoader,
-      },
-    ],
-  },
-
   ...React19Routes,
   {
     path: 'payment',
