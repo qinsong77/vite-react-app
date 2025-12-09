@@ -1,4 +1,12 @@
-import { Calculator, Code, Database, FileText, Home, Menu } from 'lucide-react'
+import {
+  Activity,
+  Calculator,
+  Code,
+  Database,
+  FileText,
+  Home,
+  Menu,
+} from 'lucide-react'
 import React from 'react'
 import { Link, Outlet } from 'react-router'
 
@@ -91,6 +99,12 @@ export const Main: React.FC = () => {
               icon={<Code className="size-4" />}
             >
               React Router Demo
+            </NavItem>
+            <NavItem
+              to="/main/activity-demo"
+              icon={<Activity className="size-4" />}
+            >
+              Activity Demo
             </NavItem>
           </ul>
         </nav>

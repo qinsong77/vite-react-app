@@ -5,6 +5,7 @@ import { convertRouteAndLoader } from '@/lib/convert-route-and-loader'
 import { Home } from './home'
 import { Introduce } from './introduce'
 import {
+  ActivityDemo,
   ApiDemo,
   CounterDemo,
   Dashboard,
@@ -39,6 +40,7 @@ const authRoutes: RouteObject[] = [
   { path: 'state-management/react-state', element: <ReactStateDemo /> },
   { path: 'data-fetching/api', element: <ApiDemo /> },
   { path: 'data-fetching/counter', element: <CounterDemo /> },
+  { path: 'activity-demo', element: <ActivityDemo /> },
   { path: '*', element: <Navigate to="." /> },
 ]
 

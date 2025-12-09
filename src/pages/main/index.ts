@@ -1,3 +1,4 @@
+export * from './activity-demo'
 export * from './dashboard'
 export * from './main'
 export * from './form-demo'
