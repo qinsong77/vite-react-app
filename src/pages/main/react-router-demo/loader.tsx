@@ -43,7 +43,7 @@ export default function PackageLoaderRoute() {
             <div>
               <h1 className="text-3xl font-bold tracking-tight">Loader Demo</h1>
               <p className="text-muted-foreground">
-                Demonstrates React Router's loader functionality
+                Demonstrates React Router&#39;s loader functionality
               </p>
             </div>
             <Button asChild variant="outline">
@@ -81,9 +81,9 @@ export default function PackageLoaderRoute() {
             </div>
             <Alert>
               <AlertDescription>
-                This data was loaded using React Router's <code>loader</code>{' '}
-                function, which runs before the component renders and provides
-                data synchronously.
+                This data was loaded using React Router&#39;s{' '}
+                <code>loader</code> function, which runs before the component
+                renders and provides data synchronously.
               </AlertDescription>
             </Alert>
           </CardContent>

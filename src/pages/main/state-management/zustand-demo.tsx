@@ -1,4 +1,4 @@
-import { PawPrint, Info, TrendingUp } from 'lucide-react'
+import { Info, PawPrint, TrendingUp } from 'lucide-react'
 import { useParams } from 'react-router'
 
 import { Alert, AlertDescription } from '@/components/ui/alert'

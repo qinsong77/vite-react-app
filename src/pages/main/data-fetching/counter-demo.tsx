@@ -43,7 +43,7 @@ export const CounterDemo = () => {
               Counter One (useState)
             </CardTitle>
             <CardDescription>
-              Simple counter using React's useState hook
+              Simple counter using React&#39;s useState hook
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -55,9 +55,9 @@ export const CounterDemo = () => {
               </div>
               <CounterOne />
               <div className="text-muted-foreground text-sm">
-                This counter uses React's built-in useState hook for local
-                component state management. It's perfect for simple state that
-                doesn't need to be shared between components.
+                This counter uses React&#39;s built-in useState hook for local
+                component state management. It&#39;s perfect for simple state
+                that doesn&#39;t need to be shared between components.
               </div>
             </div>
           </CardContent>
@@ -73,7 +73,7 @@ export const CounterDemo = () => {
               Counter Reducer (useReducer)
             </CardTitle>
             <CardDescription>
-              Advanced counter using React's useReducer hook
+              Advanced counter using React&#39;s useReducer hook
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -85,9 +85,9 @@ export const CounterDemo = () => {
               </div>
               <CounterReducer />
               <div className="text-muted-foreground text-sm">
-                This counter uses useReducer for more complex state logic. It's
-                ideal when you have multiple state transitions or when the next
-                state depends on the previous one.
+                This counter uses useReducer for more complex state logic.
+                It&#39;s It&#39;s ideal when you have multiple state transitions
+                or when state depends on the previous one.
               </div>
             </div>
           </CardContent>
@@ -196,7 +196,9 @@ export const CounterDemo = () => {
                 <ul className="text-muted-foreground space-y-2 text-sm">
                   <li>• useState triggers re-renders on every state change</li>
                   <li>• useReducer can batch multiple state updates</li>
-                  <li>• Both hooks are optimized by React's reconciliation</li>
+                  <li>
+                    • Both hooks are optimized by React&#39;s reconciliation
+                  </li>
                   <li>• Consider memoization for expensive calculations</li>
                 </ul>
               </div>

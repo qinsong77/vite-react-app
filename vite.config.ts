@@ -1,4 +1,3 @@
-/// <reference types="vitest" />
 /// <reference types="vite/client" />
 import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
@@ -20,25 +19,4 @@ export default defineConfig({
     port: 3006,
   },
   plugins: [tailwindcss(), react(), viteTsconfigPaths()],
-  test: {
-    globals: true,
-    expect: {
-      poll: {
-        timeout: 3000,
-      },
-    },
-    environment: 'jsdom',
-    setupFiles: './src/__tests__/setup-tests.ts',
-    exclude: ['**/node_modules/**', '**/e2e/**'],
-    coverage: {
-      include: ['src/**'],
-      provider: 'v8',
-    },
-    // https://cn.vitest.dev/guide/browser/
-    // browser: {
-    //   provider: 'playwright', // or 'webdriverio'
-    //   enabled: true,
-    //   name: 'chromium', // browser name is required
-    // },
-  },
 })

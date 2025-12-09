@@ -1,5 +1,6 @@
 import { ActionFunction, LoaderFunction } from 'react-router'
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 type ThenParams<T = any> = {
   clientLoader?: LoaderFunction
   loader?: T
@@ -8,6 +9,7 @@ type ThenParams<T = any> = {
   default: React.ComponentType
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const convertRouteAndLoader = <T = any>(m: ThenParams<T>) => {
   const {
     clientLoader,

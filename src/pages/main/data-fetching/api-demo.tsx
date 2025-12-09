@@ -145,12 +145,12 @@ export const ApiDemo = () => {
             <CardContent>
               <Alert variant="destructive">
                 <AlertDescription>
-                  {error?.message || 'An error occurred while fetching data'}
+                  {error.message || 'An error occurred while fetching data'}
                 </AlertDescription>
               </Alert>
               <div className="mt-4">
                 <button
-                  onClick={() => refetch()}
+                  onClick={() => void refetch()}
                   className="text-sm text-blue-600 underline hover:text-blue-800"
                 >
                   Click here to retry
@@ -160,7 +160,7 @@ export const ApiDemo = () => {
           </Card>
         )}
 
-        {isSuccess && data && (
+        {isSuccess && (
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-green-600">

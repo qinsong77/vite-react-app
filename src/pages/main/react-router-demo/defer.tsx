@@ -43,7 +43,7 @@ export default function PackageLoaderDeferRoute() {
             <div>
               <h1 className="text-3xl font-bold tracking-tight">Defer Demo</h1>
               <p className="text-muted-foreground">
-                Demonstrates React Router's deferred loading
+                Demonstrates React Router&#39;s deferred loading
               </p>
             </div>
             <Button asChild variant="outline">
@@ -182,8 +182,8 @@ function NonCriticalUI({ p }: { p: Promise<Pos> }) {
       </div>
       <Alert>
         <AlertDescription>
-          This data was loaded using React Router's defer function, which allows
-          for streaming and progressive loading of non-critical data.
+          This data was loaded using React Router&#39;s defer function, which
+          allows for streaming and progressive loading of non-critical data.
         </AlertDescription>
       </Alert>
     </div>

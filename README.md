@@ -70,6 +70,7 @@ TBD
 - https://github.com/bluwy/create-vite-extra/tree/master/template-ssr-react-streaming-ts
 - https://github.com/sozonome/vite-react-tailwind-starter
 - https://github.com/alan2207/bulletproof-react/tree/master/apps/react-vite
+- [React 项目文件分层原则](https://mp.weixin.qq.com/s/INNwbrax3NHiC5fganeFlQ)
 
 ### SSR
 
